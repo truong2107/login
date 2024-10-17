@@ -1,0 +1,88 @@
+body {
+    background-image: url('/neom-Iy59i0M7oP4-unsplash.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+.container {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login {
+    /* background-color: rgba(255, 0, 0, 0.97); */
+    height: 80vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.dangnhap{
+    margin: 0 auto;
+}
+h1 {
+    /* margin-top: 20vh; */
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.dangnhap{
+    display: block;
+    /* background-color: bisque; */
+   height: 50vh;
+   width: 30vw;
+font-size: xx-large;
+}
+.loginform a{
+    margin-top: 18px;
+    text-decoration: none;
+    color: black;
+
+}
+.loginform{
+    /* background-color: rgb(230, 230, 14); */
+    height: 30vh;
+
+}
+.Forgot{
+    /* background-color: aqua; */
+display: flex;
+justify-content: space-between;
+}
+.loginform .nut{
+    width: 100%;
+    height: 50px;
+background-color: rgba(240, 248, 255, 0);
+width: 30vw;
+}
+.loginform .nut::placeholder{
+    color: rgba(255, 255, 255, 0.597);
+    font-size: 30px;
+}
+.loginform button{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 8, 8, 0.968);
+    color: white;
+    font-size: xx-large;
+}
+#user{
+    color: white;
+    font-size: xx-large;
+}
+#pass{
+    font-size: xx-large;
+}
+label{
+    margin-top: 10px;
+}
+.check{
+    height: 25px;
+    width: 25px;
+}
+

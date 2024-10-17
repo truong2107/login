@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài liệu</title>
+    <link rel="stylesheet" href="doan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div class="dangnhap">
+             <h1>Classy login form</h1>
+                <form action="/doan2.html" class="loginform">
+                    <label for="user"><i class="fa-solid fa-user"></i></label>
+                    <input type="text" placeholder="username" class="nut" id="user">
+                    <br>
+                    <label for="pass"><i class="fa-solid fa-lock"></i></label>
+                    <input type="password" placeholder="password" class="nut" id="pass">
+                   <div class="Forgot">
+                        <p><input type="checkbox" class="check"> Remember me? </p>
+                        <a href="/forgot.html" target="_blank">Forgot password?</a>     
+                   </div>
+                   <button type="submit" id=" submit"> login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let user=document.querySelector("#user");
+    let pass=document.querySelector("#pass");
+    let submit=document.querySelector(".loginform");
+    let remember=document.querySelector(".check");
+    submit.addEventListener("submit", function(e){
+        if(user.value!=="admin"||pass.value!=="sinbaseto"){
+                e.preventDefault();
+                alert("Mật khẩu vừa nhập đã bị sai")
+        }
+    })
+</script>
+</html>
